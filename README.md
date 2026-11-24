@@ -8,24 +8,6 @@ I printed and assembled the arm from an open mini-arm design, wired the electron
 
 ---
 
-## Contents
-
-1. [Features](#features)
-2. [How it works](#how-it-works)
-3. [Hardware](#hardware)
-4. [Wiring](#wiring)
-5. [Powering the servos](#powering-the-servos)
-6. [Software setup](#software-setup)
-7. [Using the arm](#using-the-arm)
-8. [Calibrating each joint](#calibrating-each-joint)
-9. [Configuration reference](#configuration-reference)
-10. [Serial output](#serial-output)
-11. [Troubleshooting](#troubleshooting)
-12. [Limitations and future work](#limitations-and-future-work)
-
-
----
-
 ## Features
 
 - **Direct knob control.** Each of four potentiometers drives one servo: base rotation, shoulder, wrist and gripper.
@@ -92,7 +74,7 @@ When the pause pin is pulled low, the arm freezes and the on-board LED blinks. O
 | 1 | Breadboard and jumper wires | |
 | 1 | 5 V supply for the servos, 2 A or more | A 4 x AA pack (about 6 V) also works |
 | 1 | Electrolytic capacitor, 470 µF or more (optional) | Across the servo power rail |
-| | 3D-printed arm parts | See [Attribution](#attribution) |
+| | 3D-printed arm parts | |
 
 ---
 
@@ -276,14 +258,6 @@ README.md                        This file
 - SG90 servos have limited torque and plastic gears, so the arm is suited to light objects.
 - The servos have no position feedback, so the firmware assumes each servo reaches its commanded position.
 - Possible upgrades: metal-gear servos, a dedicated servo power board, an LCD or serial display for the recorded steps, and a speed knob for playback.
-
----
-
-## Attribution
-
-The mechanical design is an open mini robotic arm by its original designer. I printed and assembled my own copy with modifications and files are attaatched. 
-
-The wiring, calibration, and firmware in this repository were written for my build, with AI assistance.
 
 ---
 
